@@ -1,0 +1,139 @@
+body {
+  background-image: url("photos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, 'Times New Roman', serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #222B68;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbar a:hover {
+  color: #65A7D3;
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 300px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid #65A7D3;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px #242649;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: rgba(36, 38, 73, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-family: 'Times New Roman';
+  color: #FFFFFF;
+}
+
+h2 {
+  border-bottom: 3px solid #23337C;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-size: xx-large;
+  margin-top: 40px;
+  font-family: sans-serif;
+  color: #65A7D3;
+}
+
+p, li {
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+h3 {
+  text-align: center;
+  font-size: xx-large;
+  color: #B2D3EB;
+}
+
+.education-list img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.education-list li {
+  margin: 10px 0;
+}
+
+.work-img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #65A7D3;
+}
+
+section {
+  display: none;
+  padding: 20px;
+  background-color: rgba(35, 51, 124, 0.7); /* translucent section bg */
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+section.active {
+  display: block;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  h2, h3 {
+    font-size: 1.5em;
+  }
+
+  p, li {
+    font-size: 1.1em;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .education-list img {
+    width: 60px;
+    height: 60px;
+  }
+}
